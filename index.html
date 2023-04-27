@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html Lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>animate on scroll using html css js - no plugin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<hl>Animate on scroll - no plugin</h1>
+<br><br>
+
+
+<div class="box"><h2>HTML</h2></div>
+<div class="box"><h2>CSS</h2></div>
+<div class="box"><h2>JAVASCRIPT</h2></div>
+<div class="box"><h2>JQUERY</h2></div>
+<div class="box"><h2>RESPONSIVE</h2></div>
+<div class="box"><h2>SEO OPTIMIZED</h2></div>
+<div class="box"><h2>RESPONSIVE</h2></div>
+<div class="box"><h2>WORDPRESS</h2></div>
+<div class="box"><h2>SUPPORTS</h2></div>
+<div class="box"><h2>DEVELOPMENT</h2></div>
+<div class="box"><h2>MOBILE SUPPORTS</h2></div>
+<div class="box"><h2>CONTENT</h2></div>
+
+
+
+<script>
+const boxes = document.querySelectorAll('.box')
+window.addEventListener('scroll' , checkBoxes)
+checkboxes()
+
+    function checkBoxes(){
+        const triggerBottom = window.innerHeight / 5*4
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top
+            if(boxTop < triggerBottom){
+                box.classList.add ('show')
+            }
+            else{
+                box.classList.remove('show')
+            }
+            
+        })
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
